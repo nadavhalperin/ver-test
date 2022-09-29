@@ -15,6 +15,10 @@ SCOPES = ['https://www.googleapis.com/auth/drive', 'https://www.googleapis.com/a
 
 
 def create_service():
+    """
+    create a connection to the service, using nedded scope and users creds
+    :return: None
+    """
     print(CLIENT_SECRET_FILE, API_NAME, API_VERSION, SCOPES, sep='-')
     cred = None
 
